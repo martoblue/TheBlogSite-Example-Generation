@@ -2,81 +2,79 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>replit</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	 crossorigin="anonymous">
-	<!-- Game Font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-	<!--Main Font -->
-	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-	 rel="stylesheet">
-	<title>
-		How to contact us
-	</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>
+    Nintendo Blog
+  </title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">NintenBlog</a>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="./index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="./about.html">About</a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
-        </li>
-      </ul>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">NintenBlog</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./contact.html">Contact <span
+                class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <h1>Complete the form.</h1>
+        <div class="mb-3 mt-3">
+          <label for="exampleFormControlInput1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your message here"
+            rows="3"></textarea>
 
-    <main>
-      <h1>
-        Contact US!
-      </h1>
-        <img src="img/us.jpg" class="right mario">
-    
-      <form>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname">
-        <br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message">
-        </textarea>
-        
-        <br>
-        <input type="submit" value="Submit">
-      </form>
-      <br>
-      <h2>
-        How can we help?
-      </h2>
-    
-      <p><a href="https://www.twitch.tv/">Click me: Watch Us Playing Nintendo Games on Twitch!</a></p>
-      <p><a href="https://github.com/maple-megan333/JWD-Final-Project">Click me: Visit Our Github!</a></p>
-      
-    
-    </main>
-    <div class="holder"></div>
-    
-    <footer>
-      <p> Author: Megan, Melody, May </p>
-      <p> Contact: abcd@email.com </p>
-      <p> Generation Group Project </p>
-    </footer>
-    
-    <script src="script.js"></script>
-  </body>
+          <button type="button" class="btn btn-primary mt-3" id="sendForm">Send</button>
+        </div>
+        <h3 class="mt-3">
+          How can we help?
+        </h3>
+
+        <a href="https://www.twitch.tv/" class="mt-3">Click me: Watch Us Playing Nintendo Games on Twitch</a></br>
+        <a href="https://github.com/maple-megan333/JWD-Final-Project">Click me: Visit Our Github!</a>
+        <div id="liveAlertPlaceholder"></div>
+      </div>
+      <div class="col-md-6">
+        <h1>
+          Contact US!
+        </h1>
+        <img src="img/us.jpg" class="rounded float-start">
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p class="text-light font-monospace"> Contact: abcd@email.com </p>
+    <p class="text-light font-monospace"> Generation Group Project </p>
+    <p class="text-light font-monospace"> Author: Megan, Melody, May </p>
+  </footer>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
